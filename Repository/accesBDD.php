@@ -1,7 +1,12 @@
 <?php
 // connexion a la base de donnée
 
- function connexionBDD(){
+class AccesBDD{
+
+public $conn;
+
+//fonction qui se connecte à la BDD
+function connexionBDD(){
 
 //déclaration des variables de connexion
 
@@ -16,7 +21,7 @@ try {
   $connString =
     "mysql:host=".$DB_HOST.";dbname=".$DB_NAME.";
     port=".$DB_PORT.";charset=utf8";
-    $conn = new PDO($connString, $DB_USER, $DB_PSWD);
+    $this->$conn = new PDO($connString, $DB_USER, $DB_PSWD);
     return $conn;
 }
 catch(PDOException $e) {
@@ -24,14 +29,7 @@ catch(PDOException $e) {
 }
 
 }
-
-//function pour récuperer les info des clients
-function recupererClient() {
-	$conn = connectionBdd();
-	$res = $conn->query("SELECT nom, prenom,ddn,statut_matrimonial,nbEnfants,statutPro FROM client");
-	return $res;
 }
-
 
 
  ?>
