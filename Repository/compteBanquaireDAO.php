@@ -10,7 +10,7 @@ class AccesCompteBanquaire{
 
 public $acces;
 
-//function pour récuperer les info des clients
+//function pour récuperer les info des compte banquaire
  function recupererCompte() {
 	$this ->acces= new AccesBDD();
 	$res = $this-> acces->connexionBDD()->query("SELECT id_compte,type,nb_personne FROM compteBanquaire");
