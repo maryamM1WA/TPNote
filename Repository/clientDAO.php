@@ -3,21 +3,20 @@
 <?php
 
 require_once('accesBDD.php');
-require_once('Entity\clientDO.php');
+require_once('C:\Users\eidma\OneDrive\Bureau\XAMPP\htdocs\TPNote\Entity\clientDO.php');
 
-use AccesBDD;
 
 class AccesClient{
 
-public $acces
+public $acces;
 //connexion à la BDD
-$acces = new AccesBDD;
+
 
 
 //function pour récuperer les info des clients
  function recupererClient() {
-	$this = $acces-> connectionBdd();
-	$res = $this-> $conn->query("SELECT nom, prenom,ddn,statut_matrimonial,nbEnfants,statutPro FROM client");
+	$this ->acces= new AccesBDD();
+	$res = $this-> acces->connexionBDD()->query("SELECT nom, prenom,ddn,statut_matrimonial,nbEnfants,statutPro FROM client");
 
   $i=0;
 
