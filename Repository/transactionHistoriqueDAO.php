@@ -18,12 +18,12 @@ public $acces;
   $tabTransaction= [];
   foreach ($res as $row) {
     $transaction = new transactionHis();
-    $util->$id_transaction = $row['id_transaction'];
-    $util->$date_transaction = $row['date_transaction'];
-    $util->$heure_transaction = $row['heure_transaction'];
-    $util->$montant_transaction = $row['montant_transaction'];
-    $util->$id_client = $row['id_client'];
-    $util->$date_transaction = $row['date_transaction'];
+    $transaction->$id_transaction = $row['id_transaction'];
+    $transaction->$date_transaction = $row['date_transaction'];
+    $transaction->$heure_transaction = $row['heure_transaction'];
+    $transaction->$montant_transaction = $row['montant_transaction'];
+    $transaction->$id_client = $row['id_client'];
+    $transaction->$date_transaction = $row['date_transaction'];
     $tabTransaction[i] = $transaction;
     $i++;
   }

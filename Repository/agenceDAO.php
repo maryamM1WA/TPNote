@@ -20,9 +20,9 @@ public $acces;
   $tabAgence = [];
   foreach ($res as $row) {
     $agence = new Agence();
-    $util->$id_client = $row['id_agence'];
-    $util->$nb_conseiller = $row['nb_conseiller'];
-    $util->$nb_client = $row['nb_client'];
+    $agence->$id_client = $row['id_agence'];
+    $agence->$nb_conseiller = $row['nb_conseiller'];
+    $agence->$nb_client = $row['nb_client'];
     $tabAgence[i] = $agence;
     $i++;
   }

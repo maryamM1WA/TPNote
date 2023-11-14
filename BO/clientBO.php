@@ -15,15 +15,15 @@ class ClientBO{
 
     $tabClientBO=[];
     foreach ($res as $row) {
-      $client = new ClientDTO();
-      $util->$id_client = $row['id_client'];
-      $util->$nom = $row['nom'];
-      $util->$prenom = $row['prenom'];
-      $util->$ddn = $row['ddn'];
-      $util->$statut_matrimonial = $row['statut_matrimonial'];
-      $util->$nbEnfants = $row['nbEnfants'];
-      $util->$statutPro  = $row['statutPro '];
-      $tabClient[i] = $client;
+      $clientDTO = new ClientDTO();
+      $clientDTO->$id_client = $row['id_client'];
+      $clientDTO->$nom = $row['nom'];
+      $clientDTO->$prenom = $row['prenom'];
+      $clientDTO->$ddn = $row['ddn'];
+      $clientDTO->$statut_matrimonial = $row['statut_matrimonial'];
+      $clientDTO->$nbEnfants = $row['nbEnfants'];
+      $clientDTO->$statutPro  = $row['statutPro '];
+      $tabClientBO[i] = $clientDTO;
       $i++;
     }
 

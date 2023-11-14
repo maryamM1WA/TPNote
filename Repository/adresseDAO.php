@@ -20,11 +20,11 @@ public $acces;
   $tabAdresse = [];
   foreach ($res as $row) {
     $adresse = new Adresse();
-    $util->$id_adresse = $row['id_adresse'];
-    $util->$num_rue = $row['num_rue'];
-    $util->$nom_rue = $row['nom_rue'];
-    $util->$ville = $row['ville'];
-    $util->$cdp = $row['cdp'];
+    $adresse->$id_adresse = $row['id_adresse'];
+    $adresse->$num_rue = $row['num_rue'];
+    $adresse->$nom_rue = $row['nom_rue'];
+    $adresse->$ville = $row['ville'];
+    $adresse->$cdp = $row['cdp'];
     $tabAdresse[i] = $adresse;
     $i++;
   }

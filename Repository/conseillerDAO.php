@@ -20,11 +20,11 @@ public $acces;
   $tabConseiller = [];
   foreach ($res as $row) {
     $conseiller = new Conseiller();
-    $util->$id_conseiller = $row['id_conseiller'];
-    $util->$nom = $row['nom'];
-    $util->$prenom = $row['prenom'];
-    $util->$ddn = $row['ddn'];
-    $util->$agence = $row['agence'];
+    $conseiller->$id_conseiller = $row['id_conseiller'];
+    $conseiller->$nom = $row['nom'];
+    $conseiller->$prenom = $row['prenom'];
+    $conseiller->$ddn = $row['ddn'];
+    $conseiller->$agence = $row['agence'];
     $tabConseiller[i] = $conseiller;
     $i++;
   }

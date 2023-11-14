@@ -20,13 +20,13 @@ public $acces;
   $tabClient = [];
   foreach ($res as $row) {
     $client = new Client();
-    $util->$id_client = $row['id_client'];
-    $util->$nom = $row['nom'];
-    $util->$prenom = $row['prenom'];
-    $util->$ddn = $row['ddn'];
-    $util->$statut_matrimonial = $row['statut_matrimonial'];
-    $util->$nbEnfants = $row['nbEnfants'];
-    $util->$statutPro  = $row['statutPro '];
+    $client->$id_client = $row['id_client'];
+    $client->$nom = $row['nom'];
+    $client->$prenom = $row['prenom'];
+    $client->$ddn = $row['ddn'];
+    $client->$statut_matrimonial = $row['statut_matrimonial'];
+    $client->$nbEnfants = $row['nbEnfants'];
+    $client->$statutPro  = $row['statutPro '];
     $tabClient[i] = $client;
     $i++;
   }
