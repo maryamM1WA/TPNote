@@ -19,7 +19,7 @@ public $acces;
 
   $tabAdresse = [];
   foreach ($res as $row) {
-    $adresse = new Adresse;
+    $adresse = new Adresse();
     $util->$id_adresse = $row['id_adresse'];
     $util->$num_rue = $row['num_rue'];
     $util->$nom_rue = $row['nom_rue'];

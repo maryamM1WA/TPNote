@@ -19,7 +19,7 @@ public $acces;
 
   $tabClient = [];
   foreach ($res as $row) {
-    $client = new Client;
+    $client = new Client();
     $util->$id_client = $row['id_client'];
     $util->$nom = $row['nom'];
     $util->$prenom = $row['prenom'];

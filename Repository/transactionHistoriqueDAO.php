@@ -17,7 +17,7 @@ public $acces;
 
   $tabTransaction= [];
   foreach ($res as $row) {
-    $transaction = new transactionHis;
+    $transaction = new transactionHis();
     $util->$id_transaction = $row['id_transaction'];
     $util->$date_transaction = $row['date_transaction'];
     $util->$heure_transaction = $row['heure_transaction'];

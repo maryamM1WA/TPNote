@@ -19,7 +19,7 @@ public $acces;
 
   $tabCompte = [];
   foreach ($res as $row) {
-    $compte = new compteBanquaire;
+    $compte = new compteBanquaire();
     $util->$id_compte = $row['id_compte'];
     $util->$type = $row['type'];
     $util->$nb_personne = $row['nb_personne'];

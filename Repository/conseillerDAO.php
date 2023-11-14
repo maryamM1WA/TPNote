@@ -19,7 +19,7 @@ public $acces;
 
   $tabConseiller = [];
   foreach ($res as $row) {
-    $conseiller = new Conseiller;
+    $conseiller = new Conseiller();
     $util->$id_conseiller = $row['id_conseiller'];
     $util->$nom = $row['nom'];
     $util->$prenom = $row['prenom'];

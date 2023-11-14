@@ -19,7 +19,7 @@ public $acces;
 
   $tabPossede= [];
   foreach ($res as $row) {
-    $possede = new Possede;
+    $possede = new Possede();
     $util->$id_client = $row['id_client'];
     $util->$id_compte = $row['id_compte'];
     $tabPossede[i] = $possede;
