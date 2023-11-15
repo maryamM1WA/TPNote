@@ -14,14 +14,14 @@ $DB_HOST="127.0.0.1";
 $DB_NAME = "banque";
 $DB_PORT = 3306;
 $DB_USER = "root";
-$DB_PSWD = "paris9242";
+// $DB_PSWD = "paris9242";
 
 //connexion
 try {
   $connString =
     "mysql:host=".$DB_HOST.";dbname=".$DB_NAME.";
     port=".$DB_PORT.";charset=utf8";
-    $this->$conn = new PDO($connString, $DB_USER, $DB_PSWD);
+    $this->$conn = new PDO($connString, $DB_USER);
     return $conn;
 }
 catch(PDOException $e) {
