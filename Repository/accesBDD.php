@@ -13,7 +13,7 @@ function connexionBDD(){
 $DB_HOST="127.0.0.1";
 $DB_NAME = "banque";
 $DB_PORT = 3306;
-$DB_USER = "root";
+$DB_USER = "localhost";
 // $DB_PSWD = "paris9242";
 
 //connexion
