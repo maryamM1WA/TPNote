@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
     <title>Interface de la banque</title>
   </head>
   <body>
@@ -38,7 +39,7 @@ echo "<p>Statut professionnel: {$client->statutPro}</p>";
 echo "</div>";
 
 
-echo "</li>"
+echo "</li>";
 
 }
 echo "</ul>";
